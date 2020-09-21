@@ -15,5 +15,5 @@ This repo contains the code for orxe-cli usage for creating a counter component
 ## Following are the steps to use the orxe-counter component in another component
 
 - Go to the component workspace and perform npm install @Assignment-2-orxe-cli/counter@0.0.2
-- Use the component as mentioned in the technical specification document
+- Use the component as `<orxe-counter count=”10”></orxe-counter>`
 - Run: orxe serve
