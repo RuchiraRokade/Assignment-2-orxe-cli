@@ -1,0 +1,18 @@
+:root {
+    --counter-primary-text-color: var(--primary-text); // #242C38
+    --counter-button-container-height: var(--spacing-08); //40px
+    --counter-button-container-width: var(--spacing-08); // 40px
+    --counter-button-height: var(--spacing-06); // 24px
+    --counter-button-width: var(--spacing-06); // 24px
+    --counter-container: 120px;
+    --counter-button-primary-background-color: var(--button-primary-background-color);
+    --counter-label-font-family: var(--global-font-family); // "Proxima Nova", sans-serif
+    --counter-label-font-size: var(--cmp-txt--sb-fs); // 1.6rem
+    --counter-label-font-weight: var(--font-weight-semi-bold); // 600
+    --counter-label-line-height: line-height; // 1.5rem
+    --counter-label-letter-spacing: 0;
+    --counter-icon-container-background: var(--background-01); // #F5F8FB
+    --counter-icon-color: var(--secondary); // #0A57A1
+    --counter-disabled-icon-color: var(--disabled-text); //#969DA4
+    --counter-ripple-color: var(--separator-01); // #E1E6ED
+}

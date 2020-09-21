@@ -1,0 +1,61 @@
+@import "./counter-map.scss";
+.counter-container {
+    width: 120px;
+    height: var(--spacing-08);
+    * {
+        width: var(--spacing-08);
+        float: left;
+        text-align: center;
+    }
+    .counter-label-value {
+        color: var(--counter-primary-text-color);
+        font-family: var(--counter-label-font-family);
+        font-size: var(--counter-label-font-size);
+        font-weight: var(--counter-label-font-weight);
+        line-height: var(--counter-label-line-height);
+        letter-spacing: var(--counter-label-letter-spacing);
+        vertical-align: middle;
+        margin: 5% 0;
+    }
+    .button-container {
+        height: var(--counter-button-container-height);
+        width: var(--counter-button-container-width);
+        background: var(--counter-icon-container-background);
+        display: grid;
+        button {
+            width: var(--counter-button-width);
+            height: var(--counter-button-height);
+            opacity: 100%;
+            border: 0;
+            margin: auto;
+            padding: 2px 1px;
+            background: var(--counter-button-primary-background-color);
+            color: var(--secondary);
+            cursor: pointer;
+            &:disabled {
+                opacity: 40%;
+                color: var(--counter-disabled-icon-color);
+                pointer-events: none;
+            }
+            &:focus {
+                border: none;
+                outline: none;
+            }
+            .button-icon {
+                width: var(--counter-button-width);
+                height: var(--counter-button-height);
+            }
+        }
+        /*CSS for ripple animation*/
+        .ripple {
+            background-position: center;
+            transition: background 240ms;
+            border-radius: 100%;
+        }
+        .ripple:active {
+            background: var(--counter-ripple-color) radial-gradient(circle, transparent 1%, var(--counter-ripple-color) 1%) center/100%;
+            background-size: 100%;
+            transition: background 240ms;
+        }
+    }
+}

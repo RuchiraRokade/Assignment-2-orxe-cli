@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes" />
+
+    <title>Orxe3 Components</title>
+
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://oski-cdn.s3.amazonaws.com/common/css/fonts/ProximaNova/proxima-nova.css" />
+    <link rel="stylesheet" type="text/css" href="https://components.qa.cnxloyalty.com/theme/css/imports.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/2.3.0/custom-elements-es5-adapter.js"></script>
+    <style>
+        .card {
+            box-shadow: 0 2px 2px 0;
+            padding: 16px;
+            text-align: center;
+            background-color: white;
+            display: flex;
+        }
+        
+        h3 {
+            margin-right: auto;
+        }
+        
+        .container {
+            width: 50%;
+            height: 100%;
+            margin: 2% auto;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h3>Normal Counter</h3>
+            <orxe-counter></orxe-counter>
+        </div>
+
+        <div class="card">
+            <h3>Decrement disabled counter</h3>
+            <orxe-counter count="20" disableDec="true"></orxe-counter>
+        </div>
+
+        <div class="card">
+            <h3>Increment disabled counter</h3>
+            <orxe-counter count="30" disableInc="true"></orxe-counter>
+        </div>
+
+        <div class="card">
+            <h3>Min value is 25</h3>
+            <orxe-counter count="30" minValue="25"></orxe-counter>
+        </div>
+
+        <div class="card">
+            <h3>Max value is 35</h3>
+            <orxe-counter count="30" maxValue="35"></orxe-counter>
+        </div>
+    </div>
+</body>
+
+</html>
